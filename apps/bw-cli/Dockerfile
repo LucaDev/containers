@@ -1,7 +1,7 @@
 FROM debian:bookworm-slim AS downloader
 
-ARG BW_CLI_VERSION
-ADD https://github.com/bitwarden/clients/releases/download/cli-v${BW_CLI_VERSION}/bw-linux-${BW_CLI_VERSION}.zip /bw.zip
+ARG VERSION
+ADD https://github.com/bitwarden/clients/releases/download/cli-v${VERSION}/bw-linux-${VERSION}.zip /bw.zip
 
 RUN apt update && \
     apt install unzip --yes && \
