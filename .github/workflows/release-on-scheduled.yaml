@@ -45,3 +45,5 @@ jobs:
     needs: build-images
     uses: ./.github/workflows/render-readme.yaml
     secrets: inherit
+    permissions:
+      contents: write
