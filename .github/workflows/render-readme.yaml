@@ -3,7 +3,6 @@ name: "Render Readme"
 
 on:
   workflow_call:
-    secrets:
 
 jobs:
   render-readme:
