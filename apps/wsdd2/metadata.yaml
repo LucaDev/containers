@@ -1,5 +1,5 @@
 ---
-app: bw-cli
+app: wsdd2
 base: false
 semantic_versioning: false
 channels:
