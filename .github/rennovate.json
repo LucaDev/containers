@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "docker:enableMajor",
+    ":dependencyDashboard",
+    ":disableRateLimiting",
+    ":semanticCommits"
+  ],
+  "onboarding": false,
+  "requireConfig": "optional",
+  "suppressNotifications": ["prEditedNotification", "prIgnoreNotification"]
+}
