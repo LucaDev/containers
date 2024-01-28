@@ -13,9 +13,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          token: "${{ steps.app-token.outputs.token }}"
-
+        
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -28,7 +26,7 @@ jobs:
 
       - name: Render README
         env:
-          GITHUB_TOKEN: "${{ steps.app-token.outputs.token }}"
+          GITHUB_TOKEN: "${{ github.token }}"
         shell: bash
         run: python ./.github/scripts/render-readme.py
 
