@@ -9,16 +9,20 @@ else
     echo "Using default server"
 fi
 
-if [ ! -z ${BW_CLIENTID} ]; then
-    echo "Using APIKEY Login"
-    /opt/bw login --apikey
-    echo "Login successful. Unlocking Vault"
-    export BW_SESSION=$(/opt/bw unlock --passwordenv BW_PASSWORD --raw)
-    echo "Vault session acquired"
+if  ! /opt/bw login --check; then 
+    if [ ! -z ${BW_CLIENTID} ]; then
+        echo "Using APIKEY Login"
+        /opt/bw login --apikey
+        echo "Login successful. Unlocking Vault"
+        export BW_SESSION=$(/opt/bw unlock --passwordenv BW_PASSWORD --raw)
+        echo "Vault session acquired"
+    else
+        echo "Using Password Login"
+        export BW_SESSION=$(/opt/bw login ${BW_USER} --passwordenv BW_PASSWORD --raw)
+        echo "Password Login successful"
+    fi
 else
-    echo "Using Password Login"
-    export BW_SESSION=$(/opt/bw login ${BW_USER} --passwordenv BW_PASSWORD --raw)
-    echo "Password Login successful"
+    echo "Already logged in."
 fi
 
 echo "Checking Vault lock"
