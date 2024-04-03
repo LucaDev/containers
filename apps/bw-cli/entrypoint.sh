@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -e
-
 if [ ! -z ${BW_HOST} ]; then 
     echo "Using custom server: ${BW_HOST}"
     /opt/bw config server ${BW_HOST}
