@@ -1,6 +1,6 @@
 FROM debian:bookworm-backports
 
-RUN apt-get update && apt-get install -y -t bookworm-backports samba samba-vfs-modules libnss-ldapd gettext-base
+RUN apt-get update && apt-get install -y -t bookworm-backports samba samba-vfs-modules libnss-ldapd attr gettext-base
 
 COPY entrypoint.sh /opt/
 COPY conf/base.conf /etc/smb.d/base.conf
