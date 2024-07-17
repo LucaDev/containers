@@ -12,7 +12,7 @@ Each Image will be built with a `rolling` tag, along with tags specific to it's 
 
 Container | Channel | Image | Latest Tags
 --- | --- | --- | ---
-[bw-cli](https://github.com/LucaDev/containers/pkgs/container/bw-cli) | latest | ghcr.io/LucaDev/bw-cli |![2024.7.0](https://img.shields.io/badge/2024.7.0-blue?style=flat-square) ![rolling](https://img.shields.io/badge/rolling-blue?style=flat-square)
+[bw-cli](https://github.com/LucaDev/containers/pkgs/container/bw-cli) | latest | ghcr.io/LucaDev/bw-cli |![2024.6.1](https://img.shields.io/badge/2024.6.1-blue?style=flat-square) ![rolling](https://img.shields.io/badge/rolling-blue?style=flat-square)
 
 
 The tooling is based off [onedr0ps](https://github.com/onedr0p/containers) excellent container repo toolchain.
