@@ -1,5 +1,5 @@
 FROM debian:bookworm-backports
-RUN apt-get update && apt-get install -y -t bookworm-backports samba samba-vfs-modules libnss-ldapd attr gettext-base
+RUN apt-get update && apt-get install -y -t bookworm-backports samba
 
 ENTRYPOINT ["/usr/sbin/smbd"]
 CMD ["-F", "--no-process-group"]
