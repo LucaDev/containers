@@ -1,6 +1,6 @@
 ARG VERSION
-FROM netbox:${VERSION}
+FROM ghcr.io/netbox-community/netbox:${VERSION}
 
 RUN /usr/local/bin/uv pip install netbox-plugin-dns netbox-qrcode netbox-interface-synchronization netbox-reorder-rack nextbox-ui-plugin
-RUN DEBUG="true" SECRET_KEY="dummy" \
+RUN DEBUG="true" SECRET_KEY="dummydummydummydummydummydummydummydummydummydummydummy" \
     /opt/netbox/venv/bin/python /opt/netbox/netbox/manage.py collectstatic --no-input
