@@ -1,5 +1,0 @@
-netbox-plugin-dns
-netbox-qrcode
-netbox-interface-synchronization
-netbox-reorder-rack
-nextbox-ui-plugin
