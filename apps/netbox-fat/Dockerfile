@@ -17,7 +17,7 @@ RUN echo 'PLUGINS = [ \
     "netbox_interface_synchronization", \
     "nextbox_ui_plugin", \
     "netbox_device_view" \
-    ] \n\
+    ] \n \
 PLUGINS_CONFIG = {"netbox_device_view": { "show_on_device_tab": True }}' > /etc/netbox/config/plugins.py
 
 RUN DEBUG="true" SECRET_KEY="dummydummydummydummydummydummydummydummydummydummydummy" \
