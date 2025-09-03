@@ -7,8 +7,8 @@ RUN /usr/local/bin/uv pip install \
     netbox-qrcode \
     netbox-interface-synchronization \
     netbox-reorder-rack \
-    nextbox-ui-plugin \
-    netbox-device-view
+    nextbox-ui-plugin
+#    netbox-device-view
 
 RUN echo 'PLUGINS = [ \
     "netbox_dns", \
@@ -16,9 +16,9 @@ RUN echo 'PLUGINS = [ \
     "netbox_reorder_rack", \
     "netbox_interface_synchronization", \
     "nextbox_ui_plugin", \
-    "netbox_device_view" \
-    ] \n\
-PLUGINS_CONFIG = {"netbox_device_view": { "show_on_device_tab": True }}' > /etc/netbox/config/plugins.py
+    ] \n' > /etc/netbox/config/plugins.py
+#PLUGINS_CONFIG = {"netbox_device_view": { "show_on_device_tab": True }}' 
+#    "netbox_device_view"
 
 RUN DEBUG="true" SECRET_KEY="dummydummydummydummydummydummydummydummydummydummydummy" \
     /opt/netbox/venv/bin/python /opt/netbox/netbox/manage.py collectstatic --no-input
