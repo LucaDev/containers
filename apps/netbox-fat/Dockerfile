@@ -6,7 +6,7 @@ RUN /usr/local/bin/uv pip install \
     netbox-plugin-dns \
     netbox-interface-synchronization \
     netbox-reorder-rack \
-    netbox-qrcode \
+    netbox-qrcode
 #    nextbox-ui-plugin
 #    netbox-device-view
 
