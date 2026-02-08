@@ -7,14 +7,13 @@ RUN /usr/local/bin/uv pip install \
     netbox-interface-synchronization \
     netbox-reorder-rack \
     netbox-qrcode \
-    nextbox-ui-plugin
+#    nextbox-ui-plugin
 #    netbox-device-view
 
 RUN echo 'PLUGINS = [ \
     "netbox_dns", \
     "netbox_reorder_rack", \
     "netbox_interface_synchronization", \
-    "nextbox_ui_plugin", \
     "netbox_qrcode", \
     ] \n' > /etc/netbox/config/plugins.py
 #PLUGINS_CONFIG = {"netbox_device_view": { "show_on_device_tab": True }}' 
