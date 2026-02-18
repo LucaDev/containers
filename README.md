@@ -12,7 +12,7 @@ Each Image will be built with a `rolling` tag, along with tags specific to it's 
 
 Container | Channel | Image | Latest Tags
 --- | --- | --- | ---
-[bw-cli](https://github.com/LucaDev/containers/pkgs/container/bw-cli) | latest | ghcr.io/LucaDev/bw-cli |![2026.1.0](https://img.shields.io/badge/2026.1.0-blue?style=flat-square) ![rolling](https://img.shields.io/badge/rolling-blue?style=flat-square)
+[bw-cli]() | latest | ghcr.io/LucaDev/bw-cli |
 [netbox-fat](https://github.com/LucaDev/containers/pkgs/container/netbox-fat) | latest | ghcr.io/LucaDev/netbox-fat |![rolling](https://img.shields.io/badge/rolling-blue?style=flat-square) ![v4](https://img.shields.io/badge/v4-blue?style=flat-square) ![v4.5](https://img.shields.io/badge/v4.5-blue?style=flat-square) ![v4.5.3](https://img.shields.io/badge/v4.5.3-blue?style=flat-square)
 
 
